@@ -1,0 +1,23 @@
+@media (min-width: 992px) {
+    .toc ul li {
+        padding: 0.4rem 0 0.1rem 0;
+        font-size: $mainPFontSize * $fontScaleDownFactor;
+        line-height: $tocLineHeight;
+    }
+
+    .toc ul li.small {
+        padding: 0;
+        font-size: $mainPFontSize * $fontScaleWayDownFactor;
+    }
+
+    .toc ul li a {
+        display: block;
+        padding: 0.1rem 1rem;
+        text-decoration: none;
+        border-right: 3px solid white;
+    }
+
+    .toc ul li a:hover {
+        text-decoration: underline;
+    }
+}

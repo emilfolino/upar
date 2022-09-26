@@ -1,0 +1,14 @@
+ol,
+ul {
+    padding-left: 2rem;
+    font-size: $mainPFontSize;
+    margin-bottom: $mainLineHeight * $mainPFontSize;
+}
+
+@media (min-width: 992px) {
+    ol,
+    ul {
+        font-size: $mainPFontSize * $fontScaleFactor;
+        margin-bottom: $mainLineHeight * $mainPFontSize * $fontScaleFactor;
+    }
+}

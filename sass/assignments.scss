@@ -1,0 +1,81 @@
+body {
+    background-color: white;
+}
+
+.assignments {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.assignment-box {
+    width: 100%;
+    height: 18rem;
+    margin-bottom: 2.8rem;
+    box-shadow: $shadow;
+}
+
+.assignment-box.project {
+    width: 100%;
+    height: 24rem;
+}
+
+.assignment-header,
+.assignment-body {
+    padding: 1.4rem;
+}
+
+.assignment-header {
+    background-color: $lightCharcoal;
+
+    ::selection,
+    ::-moz-selection {
+        background: $lightCharcoal;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.assignment-header h3 {
+    margin: 0;
+}
+
+.general-information {
+    margin-bottom: 8rem;
+}
+
+.general-information h2 a,
+.general-information h3 a {
+    color: $darkCharcoal;
+    text-decoration: none;
+}
+
+.general-information h2 a:hover,
+.general-information h3 a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .assignment-box {
+        width: 46%;
+        margin-bottom: 3.92rem;
+    }
+
+    .assignment-box.project {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .assignment-box {
+        width: 30%;
+        height: 20rem;
+    }
+}

@@ -1,0 +1,21 @@
+.header {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    background: linear-gradient(45deg, $minionYellow, lighten($minionYellow, 10%));
+    box-shadow: $shadow;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.header h1 {
+    margin-bottom: 0;
+}
+
+.header a {
+    color: $darkCharcoal;
+    text-decoration: none;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}

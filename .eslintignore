@@ -1,0 +1,4 @@
+output/
+dist/
+*.min.js
+*.pack.js

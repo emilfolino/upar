@@ -1,0 +1,165 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: $bodyFont;
+    color: $fontColor;
+    line-height: $mainLineHeight;
+    font-display: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $titleFont;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: $mainH1FontSize;
+    margin-bottom: $mainLineHeight * $mainPFontSize;
+}
+
+h2 {
+    font-size: $mainH2FontSize;
+    margin-bottom: $mainLineHeight * $mainPFontSize;
+}
+
+h3 {
+    font-size: $mainH3FontSize;
+    margin-bottom: $mainLineHeight * $mainPFontSize;
+}
+
+h4 {
+    font-size: $mainH4FontSize;
+    margin-bottom: $mainLineHeight * $mainPFontSize;
+}
+
+h5 {
+    font-size: $mainH5FontSize;
+    margin-bottom: $mainLineHeight * $mainPFontSize;
+}
+
+p {
+    font-size: $mainPFontSize;
+    margin-bottom: $mainLineHeight * $mainPFontSize;
+}
+
+a {
+    color: $blueGem;
+}
+
+.week h1 a,
+.week h2 a,
+.week h3 a,
+.week h4 a,
+.week h5 a {
+    color: $darkCharcoal;
+    text-decoration: none;
+}
+
+.week h1 a:hover,
+.week h2 a:hover,
+.week h3 a:hover,
+.week h4 a:hover,
+.week h5 a:hover {
+    text-decoration: underline;
+}
+
+.anchor {
+    text-decoration: none;
+    margin-left: 1rem;
+    display: none;
+}
+
+.general-information h2:hover .anchor,
+.general-information h4:hover .anchor,
+.general-information h5:hover .anchor {
+    display: inline;
+}
+
+.author {
+    color: $lightCharcoal;
+    font-style: italic;
+}
+
+blockquote,
+.optional {
+    border-left: 4px solid $minionYellow;
+    padding: 2rem;
+    box-shadow: $shadow;
+    margin-bottom: $mainLineHeight * $mainPFontSize;
+}
+
+blockquote p {
+    font-size: $mainPFontSize * $fontScaleFactor;
+    margin-bottom: 0;
+}
+
+.week img {
+    max-width: 100%;
+}
+
+.optional {
+    border-left: 4px solid $minionYellow;
+    background-color: lighten($minionYellow, 25%);
+    padding: $mainPFontSize * $mainLineHeight;
+    margin-bottom: $mainPFontSize * $mainLineHeight;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+
+
+@media (min-width: 768px) {
+    .main-title {
+        font-size: 3rem;
+        margin-bottom: 1.4rem;
+    }
+}
+
+@media (min-width: 992px) {
+    h1 {
+        font-size: $mainH1FontSize * $fontScaleFactor;
+        margin-bottom: $mainLineHeight * $mainPFontSize * $fontScaleFactor;
+    }
+
+    h2 {
+        font-size: $mainH2FontSize * $fontScaleFactor;
+        margin-bottom: $mainLineHeight * $mainPFontSize * $fontScaleFactor;
+    }
+
+    h3 {
+        font-size: $mainH3FontSize * $fontScaleFactor;
+        margin-bottom: $mainLineHeight * $mainPFontSize * $fontScaleFactor;
+    }
+
+    h4 {
+        font-size: $mainH4FontSize * $fontScaleFactor;
+        margin-bottom: $mainLineHeight * $mainPFontSize * $fontScaleFactor;
+    }
+
+    p {
+        font-size: $mainPFontSize * $fontScaleFactor;
+        margin-bottom: $mainLineHeight * $mainPFontSize * $fontScaleFactor;
+    }
+
+    blockquote {
+        margin-bottom: $mainLineHeight * $mainPFontSize * $fontScaleFactor;
+    }
+
+    blockquote p {
+        font-size: $mainPFontSize * $fontScaleFactor * $fontScaleFactor;
+        margin-bottom: 0;
+    }
+
+    .optional {
+        padding: $mainPFontSize * $mainLineHeight * $fontScaleFactor;
+        margin-bottom: $mainPFontSize * $mainLineHeight * $fontScaleFactor;
+    }
+}

@@ -1,0 +1,24 @@
+$minionYellow: #f0db4f;
+$darkCharcoal: #323330;
+$lightCharcoal: lighten($darkCharcoal, 10%);
+$blueGem: #2915a3;
+
+$shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.2);
+
+$titleFont: Helvetica, sans-serif;
+$bodyFont: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+$codeFont: monospace;
+$fontColor: $darkCharcoal;
+$alternateFontColor: white;
+
+$mainPFontSize: 1rem;
+$mainH1FontSize: 3rem;
+$mainH2FontSize: 2.4rem;
+$mainH3FontSize: 2rem;
+$mainH4FontSize: 1.7rem;
+$mainH5FontSize: 1.5rem;
+$fontScaleFactor: 1.1;
+$fontScaleDownFactor: 0.9;
+$fontScaleWayDownFactor: 0.7;
+$mainLineHeight: 1.4;
+$tocLineHeight: 1.1;
